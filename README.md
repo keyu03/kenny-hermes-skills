@@ -1,2 +1,2 @@
-# kenny-hermes-skills-
+# kenny-hermes-skills
 kenny-hermes-skills/
