@@ -6,10 +6,27 @@ This repo is the source-of-truth for custom skills before syncing them into one 
 
 ## Implemented skills
 
-| Skill | Purpose | Suggested profiles |
-|---|---|---|
-| `personal-flow-os` | 90-day focus, Daily Boss, weekly review, project incubation | `lab`, `life`, `learning` |
-| `ai-lab-flow-triage` | AI tool/repo/agent/MCP/plugin triage, experiments, Obsidian archive | `lab`, `learning`, `work-ai` |
+| Skill | Purpose | Suggested profiles | Usage doc |
+|---|---|---|---|
+| `personal-flow-os` | 90-day focus, Daily Boss, weekly review, project incubation | `lab`, `life`, `learning` | [`docs/usage/personal-flow-os.md`](docs/usage/personal-flow-os.md) |
+| `ai-lab-flow-triage` | AI tool/repo/agent/MCP/plugin triage, experiments, Obsidian archive | `lab`, `learning`, `work-ai` | [`docs/usage/ai-lab-flow-triage.md`](docs/usage/ai-lab-flow-triage.md) |
+
+## Documentation rule
+
+Every implemented skill must include a human usage doc:
+
+```text
+skills/<skill-name>/SKILL.md
+docs/usage/<skill-name>.md
+```
+
+See [`docs/skill-documentation-standard.md`](docs/skill-documentation-standard.md).
+
+Before committing a new skill, run:
+
+```bash
+python scripts/check-skill-docs.py
+```
 
 ## Skill roadmap
 
@@ -33,9 +50,14 @@ skills/
   ai-lab-flow-triage/
     SKILL.md
 docs/
+  skill-documentation-standard.md
   skill-options-roadmap.md
+  usage/
+    personal-flow-os.md
+    ai-lab-flow-triage.md
 scripts/
   sync-to-profiles.py
+  check-skill-docs.py
 ```
 
 ## Sync to a Hermes profile
