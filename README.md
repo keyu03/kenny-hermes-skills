@@ -4,12 +4,25 @@ Personal Hermes skills maintained by Yaohsiang Ko (`keyu03`) with Hermes Agent a
 
 This repo is the source-of-truth for custom skills before syncing them into one or more local Hermes profiles.
 
-## Skills
+## Implemented skills
 
 | Skill | Purpose | Suggested profiles |
 |---|---|---|
 | `personal-flow-os` | 90-day focus, Daily Boss, weekly review, project incubation | `lab`, `life`, `learning` |
 | `ai-lab-flow-triage` | AI tool/repo/agent/MCP/plugin triage, experiments, Obsidian archive | `lab`, `learning`, `work-ai` |
+
+## Skill roadmap
+
+See [`docs/skill-options-roadmap.md`](docs/skill-options-roadmap.md) for the organized skill map.
+
+Current and candidate skills:
+
+| Skill | Status | One-line purpose |
+|---|---|---|
+| `personal-flow-os` | Implemented | Treat yourself like a company; Hermes acts as chief of staff. |
+| `ai-lab-flow-triage` | Implemented | Sort AI discoveries into learn, test, track, incubate, or kill. |
+| `daily-boss-review` | Candidate | Pick one Daily Boss; do not open ten dungeons at once. |
+| `ai-project-incubator` | Candidate | Turn inspiration into experiments, projects, or clean exits. |
 
 ## Layout
 
@@ -19,6 +32,8 @@ skills/
     SKILL.md
   ai-lab-flow-triage/
     SKILL.md
+docs/
+  skill-options-roadmap.md
 scripts/
   sync-to-profiles.py
 ```
